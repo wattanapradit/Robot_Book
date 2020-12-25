@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on darwin)" generated="20201225 15:48:39.290" rpa="false">
+<suite id="s1" name="Login" source="/Users/ads/Documents/Robot/Robot_Book/Login.robot">
+<kw name="Run Keywords" library="BuiltIn" type="setup">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Open Browser</arg>
+<arg>${BACKENDURL}</arg>
+<arg>chrome</arg>
+<arg>AND</arg>
+<arg>Maximize Browser Window</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${BACKENDURL}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20201225 15:48:39.444" level="INFO">Opening browser 'chrome' to base url 'https://book-stg.adessolab.com/'.</msg>
+<status status="PASS" starttime="20201225 15:48:39.444" endtime="20201225 15:48:42.520"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201225 15:48:42.521" endtime="20201225 15:48:42.900"></status>
+</kw>
+<status status="PASS" starttime="20201225 15:48:39.443" endtime="20201225 15:48:42.900"></status>
+</kw>
+<test id="s1-t1" name="login">
+<kw name="Sleep" library="BuiltIn" type="setup">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201225 15:48:44.902" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201225 15:48:42.901" endtime="20201225 15:48:44.902"></status>
+</kw>
+<kw name="Wait Click" library="Book_Key">
+<arguments>
+<arg>${Clicklogin}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>15s</arg>
+</arguments>
+<status status="PASS" starttime="20201225 15:48:44.903" endtime="20201225 15:48:44.921"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20201225 15:48:44.921" level="INFO">Clicking element '//a[contains(text(),'Login')]'.</msg>
+<status status="PASS" starttime="20201225 15:48:44.921" endtime="20201225 15:48:45.310"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20201225 15:48:46.312" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201225 15:48:45.310" endtime="20201225 15:48:46.312"></status>
+</kw>
+<status status="PASS" starttime="20201225 15:48:44.903" endtime="20201225 15:48:46.312"></status>
+</kw>
+<kw name="Wait Type" library="Book_Key">
+<arguments>
+<arg>${input_user}</arg>
+<arg>admin123</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>30s</arg>
+</arguments>
+<status status="PASS" starttime="20201225 15:48:46.313" endtime="20201225 15:48:46.327"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${txt_value}</arg>
+</arguments>
+<msg timestamp="20201225 15:48:46.328" level="INFO">Typing text 'admin123' into text field '//*[@id="username"]'.</msg>
+<status status="PASS" starttime="20201225 15:48:46.328" endtime="20201225 15:48:46.404"></status>
+</kw>
+<status status="PASS" starttime="20201225 15:48:46.313" endtime="20201225 15:48:46.405"></status>
+</kw>
+<kw name="Wait Type" library="Book_Key">
+<arguments>
+<arg>${input_pass}</arg>
+<arg>123123123</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>30s</arg>
+</arguments>
+<status status="PASS" starttime="20201225 15:48:46.405" endtime="20201225 15:48:46.419"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${txt_value}</arg>
+</arguments>
+<msg timestamp="20201225 15:48:46.419" level="INFO">Typing text '123123123' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20201225 15:48:46.419" endtime="20201225 15:48:46.466"></status>
+</kw>
+<status status="PASS" starttime="20201225 15:48:46.405" endtime="20201225 15:48:46.466"></status>
+</kw>
+<kw name="Wait Click" library="Book_Key">
+<arguments>
+<arg>${btnlogin}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>15s</arg>
+</arguments>
+<status status="PASS" starttime="20201225 15:48:46.467" endtime="20201225 15:48:46.478"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20201225 15:48:46.479" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20201225 15:48:46.478" endtime="20201225 15:48:47.439"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20201225 15:48:48.440" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201225 15:48:47.439" endtime="20201225 15:48:48.440"></status>
+</kw>
+<status status="PASS" starttime="20201225 15:48:46.466" endtime="20201225 15:48:48.440"></status>
+</kw>
+<status status="PASS" starttime="20201225 15:48:42.900" endtime="20201225 15:48:48.440" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Add book">
+<kw name="Sleep" library="BuiltIn" type="setup">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20201225 15:48:50.443" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201225 15:48:48.441" endtime="20201225 15:48:50.443"></status>
+</kw>
+<kw name="Wait Click" library="Book_Key">
+<arguments>
+<arg>${clickbook}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>15s</arg>
+</arguments>
+<status status="PASS" starttime="20201225 15:48:50.443" endtime="20201225 15:48:50.455"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20201225 15:48:50.456" level="INFO">Clicking element 'xpath=(//a[contains(@href, '#')])[3]'.</msg>
+<status status="PASS" starttime="20201225 15:48:50.455" endtime="20201225 15:48:50.492"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20201225 15:48:51.493" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201225 15:48:50.492" endtime="20201225 15:48:51.494"></status>
+</kw>
+<status status="PASS" starttime="20201225 15:48:50.443" endtime="20201225 15:48:51.494"></status>
+</kw>
+<kw name="Wait Click" library="Book_Key">
+<arguments>
+<arg>${clickaddbook}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>15s</arg>
+</arguments>
+<status status="PASS" starttime="20201225 15:48:51.494" endtime="20201225 15:48:51.507"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20201225 15:48:51.508" level="INFO">Clicking element '//li[3]/ul/li/a/p'.</msg>
+<status status="PASS" starttime="20201225 15:48:51.507" endtime="20201225 15:48:52.252"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20201225 15:48:53.253" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201225 15:48:52.252" endtime="20201225 15:48:53.253"></status>
+</kw>
+<status status="PASS" starttime="20201225 15:48:51.494" endtime="20201225 15:48:53.253"></status>
+</kw>
+<kw name="Wait Click" library="Book_Key">
+<arguments>
+<arg>${choosebook_type}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>15s</arg>
+</arguments>
+<status status="PASS" starttime="20201225 15:48:53.253" endtime="20201225 15:48:53.267"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20201225 15:48:53.267" level="INFO">Clicking element 'xpath=//select[@name="book_type"]'.</msg>
+<status status="PASS" starttime="20201225 15:48:53.267" endtime="20201225 15:48:53.371"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20201225 15:48:54.371" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201225 15:48:53.371" endtime="20201225 15:48:54.372"></status>
+</kw>
+<status status="PASS" starttime="20201225 15:48:53.253" endtime="20201225 15:48:54.372"></status>
+</kw>
+<kw name="Wait Click" library="Book_Key">
+<arguments>
+<arg>${choosebook_type2}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>15s</arg>
+</arguments>
+<status status="PASS" starttime="20201225 15:48:54.372" endtime="20201225 15:48:54.385"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20201225 15:48:54.385" level="INFO">Clicking element 'xpath=//select/option[5]'.</msg>
+<status status="PASS" starttime="20201225 15:48:54.385" endtime="20201225 15:48:54.692"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20201225 15:48:55.695" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20201225 15:48:54.692" endtime="20201225 15:48:55.695"></status>
+</kw>
+<status status="PASS" starttime="20201225 15:48:54.372" endtime="20201225 15:48:55.695"></status>
+</kw>
+<kw name="Wait Type" library="Book_Key">
+<arguments>
+<arg>${inputisbn}</arg>
+<arg>123123123123123123</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>30s</arg>
+</arguments>
+<status status="PASS" starttime="20201225 15:48:55.696" endtime="20201225 15:48:55.708"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${txt_value}</arg>
+</arguments>
+<msg timestamp="20201225 15:48:55.709" level="INFO">Typing text '123123123123123123' into text field '//*[@id="isbn"]'.</msg>
+<status status="PASS" starttime="20201225 15:48:55.708" endtime="20201225 15:48:56.015"></status>
+</kw>
+<status status="PASS" starttime="20201225 15:48:55.695" endtime="20201225 15:48:56.015"></status>
+</kw>
+<kw name="Wait Type" library="Book_Key">
+<arguments>
+<arg>${inputblog_url}</arg>
+<arg>333</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>30s</arg>
+</arguments>
+<status status="PASS" starttime="20201225 15:48:56.016" endtime="20201225 15:48:56.028"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${txt_value}</arg>
+</arguments>
+<msg timestamp="20201225 15:48:56.028" level="INFO">Typing text '333' into text field '//*[@id="blog_url"]'.</msg>
+<status status="PASS" starttime="20201225 15:48:56.028" endtime="20201225 15:48:56.074"></status>
+</kw>
+<status status="PASS" starttime="20201225 15:48:56.016" endtime="20201225 15:48:56.074"></status>
+</kw>
+<kw name="Wait Type" library="Book_Key">
+<arguments>
+<arg>${inputyoutube_url}</arg>
+<arg>444444</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>30s</arg>
+</arguments>
+<status status="PASS" starttime="20201225 15:48:56.075" endtime="20201225 15:48:56.087"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${txt_value}</arg>
+</arguments>
+<msg timestamp="20201225 15:48:56.087" level="INFO">Typing text '444444' into text field '//*[@id="youtube_url"]'.</msg>
+<status status="PASS" starttime="20201225 15:48:56.087" endtime="20201225 15:48:56.142"></status>
+</kw>
+<status status="PASS" starttime="20201225 15:48:56.074" endtime="20201225 15:48:56.142"></status>
+</kw>
+<kw name="Wait Type" library="Book_Key">
+<arguments>
+<arg>${inputbook_name}</arg>
+<arg>ชื่อหนังสือค่าๆๆ</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>30s</arg>
+</arguments>
+<status status="PASS" starttime="20201225 15:48:56.142" endtime="20201225 15:48:56.154"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${txt_value}</arg>
+</arguments>
+<msg timestamp="20201225 15:48:56.155" level="INFO">Typing text 'ชื่อหนังสือค่าๆๆ' into text field '//*[@id="book_name"]'.</msg>
+<status status="PASS" starttime="20201225 15:48:56.155" endtime="20201225 15:48:56.224"></status>
+</kw>
+<status status="PASS" starttime="20201225 15:48:56.142" endtime="20201225 15:48:56.225"></status>
+</kw>
+<status status="PASS" starttime="20201225 15:48:48.441" endtime="20201225 15:48:56.225" critical="yes"></status>
+</test>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201225 15:48:56.225" endtime="20201225 15:48:56.356"></status>
+</kw>
+<status status="PASS" starttime="20201225 15:48:39.291" endtime="20201225 15:48:56.356"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20201225 15:48:39.442" level="ERROR">Error in file '/Users/ads/Documents/Robot/Robot_Book/Book_Var.robot' on line 22: Invalid variable name '&lt;option value="2"&gt;โรแมนติก-หวานซึ้ง&lt;/option&gt;'.</msg>
+</errors>
+</robot>

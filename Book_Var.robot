@@ -1,20 +1,22 @@
 *** Variables ***
-${BACKENDURL}     http://192.168.24.183:8000/   
-${BACKENDURL1}    http://192.168.24.192:8000/ 
-${BACKENDURL2}    http://localhost:3000/  
-${API_back}       http://192.168.24.192:5000
-
-${btn_yes}    //*[@class="swal2-confirm swal2-styled"] 
-${btn_no}    //*[@class="swal2-cancel swal2-styled"] 
-${btn_ok}    //*[@class="swal2-confirm swal2-styled"] 
-@{chrome_arguments}    --disable-infobars    --headless    --disable-gpu
 #-----------login-----------
-${input_user}           //*[@name="email"]
-${input_pass}           //*[@name="password"]
-${input_user_fail}      //*[@name="email"]
-${input_pass_fail}      //*[@name="password"]
-${btn_login}            //*[@id="login"] 
-${alert_login}          css=button.swal2-confirm.swal2-styled
+${BACKENDURL}     https://book-stg.adessolab.com/ 
+${username}  admin123
+${password}  123123123
+${Clicklogin}         //a[contains(text(),'Login')]
+${input_user}         //*[@id="username"]
+${input_pass}         //*[@id="password"]
+${btnlogin}           //button[@type='submit']
+
+${clickbook}       xpath=(//a[contains(@href, '#')])[3]
+${clickaddbook}   //li[3]/ul/li/a/p
+${inputisbn}      //*[@id="isbn"]
+${inputblog_url}      //*[@id="blog_url"]
+${inputyoutube_url}      //*[@id="youtube_url"]
+${choosebook_type}    xpath=//select[@name="book_type"]
+${choosebook_type2}   xpath=//select/option[5]
+${inputbook_name}    //*[@id="book_name"]
 #-----------Category-----------
 
 
+<option value="2">โรแมนติก-หวานซึ้ง</option>
