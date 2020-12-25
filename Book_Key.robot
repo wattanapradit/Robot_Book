@@ -20,13 +20,14 @@ wait and click Link
     [Arguments]    ${locator}
      Wait Until Element Is Visible     ${locator}    15s
      Click Link    ${locator}
-wait and click choose file
+wait click choose file
     [Arguments]    ${locator}   ${AddFile}
-    Wait Until Element Is Visible     ${locator}   15s
-    Scroll Element Into View      ${locator} 
-    Sleep  1s
+    #Wait Until Element Is Visible     ${locator}   15s
+    #Scroll Element Into View      ${locator} 
+    #Sleep  1s
     Choose File      ${locator}     ${AddFile}
     Sleep  1s
+
 wait and Clear text
     [Arguments]    ${locator}   
     Wait Until Element Is Visible    ${locator}     15s
