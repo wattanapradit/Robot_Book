@@ -19,4 +19,12 @@ ${inputbook_name}      //*[@id="book_name"]
 ${inputblame_position}       //*[@id="blame_position"]
 ${clickname_picture}         //input[@id='name_picture']
 ${clickblame_position}       //*[@id="blame_picture"]
-${pic_name_picture}      /Users/ads/Desktop/4kPic/Portrait/soulcalibur-lost-swords-game-4k-s1-1080x1920.jpg
+${pic_name_picture}      /Users/ads/Desktop/Book/BeaPrommajan.jpg
+${inputwriter}      //*[@id="writer"]
+${inputalias}      //*[@id="alias"]
+${inputproduct_price}      //*[@id="product_price"]
+${inputprice}      //*[@id="price"]
+${inputpages}     //*[@id="pages"]
+${inputpim_time}   //*[@id="pim_time"]
+${inputpim_year}         //*[@id="pim_year"]
+
