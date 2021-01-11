@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Rebot 3.2.2 (Python 3.9.0 on darwin)" generated="20201225 16:57:10.431" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.0 on darwin)" generated="20210111 10:06:06.545" rpa="false">
 <suite id="s1" name="Login" source="/Users/ads/Documents/Robot/Robot_Book/Login.robot">
 <kw name="Run Keywords" library="BuiltIn" type="setup">
 <doc>Executes all the given keywords in a sequence.</doc>
@@ -16,18 +16,14 @@
 <arg>${BACKENDURL}</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20201225 16:56:50.498" level="INFO">Opening browser 'chrome' to base url 'https://book-stg.adessolab.com/'.</msg>
-<status status="PASS" starttime="20201225 16:56:50.498" endtime="20201225 16:56:53.515"></status>
+<msg timestamp="20210111 10:06:06.768" level="INFO">Opening browser 'chrome' to base url 'https://book-stg.adessolab.com/'.</msg>
+<status status="PASS" starttime="20210111 10:06:06.768" endtime="20210111 10:06:10.348"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20201225 16:56:53.516" endtime="20201225 16:56:53.881"></status>
+<status status="PASS" starttime="20210111 10:06:10.348" endtime="20210111 10:06:10.667"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:56:50.497" endtime="20201225 16:56:53.881"></status>
-</kw>
-<kw name="Close Browser" library="Selenium2Library" type="teardown">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20201225 16:57:10.057" endtime="20201225 16:57:10.157"></status>
+<status status="PASS" starttime="20210111 10:06:06.768" endtime="20210111 10:06:10.667"></status>
 </kw>
 <test id="s1-t1" name="login">
 <kw name="Sleep" library="BuiltIn" type="setup">
@@ -35,8 +31,8 @@
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20201225 16:56:55.882" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201225 16:56:53.881" endtime="20201225 16:56:55.882"></status>
+<msg timestamp="20210111 10:06:12.669" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210111 10:06:10.668" endtime="20210111 10:06:12.669"></status>
 </kw>
 <kw name="Wait Click" library="Book_Key">
 <arguments>
@@ -48,25 +44,25 @@
 <arg>${locator}</arg>
 <arg>15s</arg>
 </arguments>
-<status status="PASS" starttime="20201225 16:56:55.883" endtime="20201225 16:56:55.900"></status>
+<status status="PASS" starttime="20210111 10:06:12.669" endtime="20210111 10:06:12.687"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20201225 16:56:55.900" level="INFO">Clicking element '//a[contains(text(),'Login')]'.</msg>
-<status status="PASS" starttime="20201225 16:56:55.900" endtime="20201225 16:56:56.266"></status>
+<msg timestamp="20210111 10:06:12.687" level="INFO">Clicking element '//a[contains(text(),'Login')]'.</msg>
+<status status="PASS" starttime="20210111 10:06:12.687" endtime="20210111 10:06:13.182"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20201225 16:56:57.268" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20201225 16:56:56.266" endtime="20201225 16:56:57.268"></status>
+<msg timestamp="20210111 10:06:14.183" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210111 10:06:13.182" endtime="20210111 10:06:14.183"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:56:55.882" endtime="20201225 16:56:57.268"></status>
+<status status="PASS" starttime="20210111 10:06:12.669" endtime="20210111 10:06:14.183"></status>
 </kw>
 <kw name="Wait Type" library="Book_Key">
 <arguments>
@@ -79,7 +75,7 @@
 <arg>${locator}</arg>
 <arg>30s</arg>
 </arguments>
-<status status="PASS" starttime="20201225 16:56:57.268" endtime="20201225 16:56:57.285"></status>
+<status status="PASS" starttime="20210111 10:06:14.184" endtime="20210111 10:06:14.200"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -87,10 +83,10 @@
 <arg>${locator}</arg>
 <arg>${txt_value}</arg>
 </arguments>
-<msg timestamp="20201225 16:56:57.285" level="INFO">Typing text 'admin123' into text field '//*[@id="username"]'.</msg>
-<status status="PASS" starttime="20201225 16:56:57.285" endtime="20201225 16:56:57.369"></status>
+<msg timestamp="20210111 10:06:14.200" level="INFO">Typing text 'admin123' into text field '//*[@id="username"]'.</msg>
+<status status="PASS" starttime="20210111 10:06:14.200" endtime="20210111 10:06:14.418"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:56:57.268" endtime="20201225 16:56:57.370"></status>
+<status status="PASS" starttime="20210111 10:06:14.184" endtime="20210111 10:06:14.418"></status>
 </kw>
 <kw name="Wait Type" library="Book_Key">
 <arguments>
@@ -103,7 +99,7 @@
 <arg>${locator}</arg>
 <arg>30s</arg>
 </arguments>
-<status status="PASS" starttime="20201225 16:56:57.370" endtime="20201225 16:56:57.383"></status>
+<status status="PASS" starttime="20210111 10:06:14.419" endtime="20210111 10:06:14.432"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -111,10 +107,10 @@
 <arg>${locator}</arg>
 <arg>${txt_value}</arg>
 </arguments>
-<msg timestamp="20201225 16:56:57.383" level="INFO">Typing text '123123123' into text field '//*[@id="password"]'.</msg>
-<status status="PASS" starttime="20201225 16:56:57.383" endtime="20201225 16:56:57.431"></status>
+<msg timestamp="20210111 10:06:14.432" level="INFO">Typing text '123123123' into text field '//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20210111 10:06:14.432" endtime="20210111 10:06:14.481"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:56:57.370" endtime="20201225 16:56:57.431"></status>
+<status status="PASS" starttime="20210111 10:06:14.418" endtime="20210111 10:06:14.481"></status>
 </kw>
 <kw name="Wait Click" library="Book_Key">
 <arguments>
@@ -126,27 +122,27 @@
 <arg>${locator}</arg>
 <arg>15s</arg>
 </arguments>
-<status status="PASS" starttime="20201225 16:56:57.431" endtime="20201225 16:56:57.443"></status>
+<status status="PASS" starttime="20210111 10:06:14.482" endtime="20210111 10:06:14.494"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20201225 16:56:57.444" level="INFO">Clicking element '//button[@type='submit']'.</msg>
-<status status="PASS" starttime="20201225 16:56:57.443" endtime="20201225 16:56:58.612"></status>
+<msg timestamp="20210111 10:06:14.495" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20210111 10:06:14.494" endtime="20210111 10:06:15.558"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20201225 16:56:59.614" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20201225 16:56:58.612" endtime="20201225 16:56:59.614"></status>
+<msg timestamp="20210111 10:06:16.560" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210111 10:06:15.558" endtime="20210111 10:06:16.560"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:56:57.431" endtime="20201225 16:56:59.615"></status>
+<status status="PASS" starttime="20210111 10:06:14.481" endtime="20210111 10:06:16.561"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:56:53.881" endtime="20201225 16:56:59.615" critical="yes"></status>
+<status status="PASS" starttime="20210111 10:06:10.668" endtime="20210111 10:06:16.561" critical="yes"></status>
 </test>
 <test id="s1-t2" name="Add book">
 <kw name="Sleep" library="BuiltIn" type="setup">
@@ -154,8 +150,8 @@
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20201225 16:57:01.618" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20201225 16:56:59.616" endtime="20201225 16:57:01.619"></status>
+<msg timestamp="20210111 10:06:18.569" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210111 10:06:16.567" endtime="20210111 10:06:18.569"></status>
 </kw>
 <kw name="Wait Click" library="Book_Key">
 <arguments>
@@ -167,25 +163,25 @@
 <arg>${locator}</arg>
 <arg>15s</arg>
 </arguments>
-<status status="PASS" starttime="20201225 16:57:01.620" endtime="20201225 16:57:01.633"></status>
+<status status="PASS" starttime="20210111 10:06:18.570" endtime="20210111 10:06:18.585"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20201225 16:57:01.633" level="INFO">Clicking element 'xpath=(//a[contains(@href, '#')])[3]'.</msg>
-<status status="PASS" starttime="20201225 16:57:01.633" endtime="20201225 16:57:01.669"></status>
+<msg timestamp="20210111 10:06:18.585" level="INFO">Clicking element 'xpath=(//a[contains(@href, '#')])[3]'.</msg>
+<status status="PASS" starttime="20210111 10:06:18.585" endtime="20210111 10:06:18.622"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20201225 16:57:02.670" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20201225 16:57:01.670" endtime="20201225 16:57:02.670"></status>
+<msg timestamp="20210111 10:06:19.624" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210111 10:06:18.622" endtime="20210111 10:06:19.624"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:57:01.619" endtime="20201225 16:57:02.670"></status>
+<status status="PASS" starttime="20210111 10:06:18.570" endtime="20210111 10:06:19.625"></status>
 </kw>
 <kw name="Wait Click" library="Book_Key">
 <arguments>
@@ -197,25 +193,25 @@
 <arg>${locator}</arg>
 <arg>15s</arg>
 </arguments>
-<status status="PASS" starttime="20201225 16:57:02.671" endtime="20201225 16:57:02.684"></status>
+<status status="PASS" starttime="20210111 10:06:19.626" endtime="20210111 10:06:19.640"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20201225 16:57:02.684" level="INFO">Clicking element '//li[3]/ul/li/a/p'.</msg>
-<status status="PASS" starttime="20201225 16:57:02.684" endtime="20201225 16:57:03.437"></status>
+<msg timestamp="20210111 10:06:19.640" level="INFO">Clicking element '//li[3]/ul/li/a/p'.</msg>
+<status status="PASS" starttime="20210111 10:06:19.640" endtime="20210111 10:06:20.418"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20201225 16:57:04.439" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20201225 16:57:03.438" endtime="20201225 16:57:04.439"></status>
+<msg timestamp="20210111 10:06:21.420" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210111 10:06:20.418" endtime="20210111 10:06:21.420"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:57:02.670" endtime="20201225 16:57:04.439"></status>
+<status status="PASS" starttime="20210111 10:06:19.625" endtime="20210111 10:06:21.421"></status>
 </kw>
 <kw name="Wait Type" library="Book_Key">
 <arguments>
@@ -228,7 +224,7 @@
 <arg>${locator}</arg>
 <arg>30s</arg>
 </arguments>
-<status status="PASS" starttime="20201225 16:57:04.440" endtime="20201225 16:57:04.454"></status>
+<status status="PASS" starttime="20210111 10:06:21.421" endtime="20210111 10:06:21.434"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -236,10 +232,10 @@
 <arg>${locator}</arg>
 <arg>${txt_value}</arg>
 </arguments>
-<msg timestamp="20201225 16:57:04.454" level="INFO">Typing text '123123123123123123' into text field '//*[@id="isbn"]'.</msg>
-<status status="PASS" starttime="20201225 16:57:04.454" endtime="20201225 16:57:04.528"></status>
+<msg timestamp="20210111 10:06:21.435" level="INFO">Typing text '123123123123123123' into text field '//*[@id="isbn"]'.</msg>
+<status status="PASS" starttime="20210111 10:06:21.434" endtime="20210111 10:06:21.511"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:57:04.440" endtime="20201225 16:57:04.528"></status>
+<status status="PASS" starttime="20210111 10:06:21.421" endtime="20210111 10:06:21.511"></status>
 </kw>
 <kw name="Wait Type" library="Book_Key">
 <arguments>
@@ -252,7 +248,7 @@
 <arg>${locator}</arg>
 <arg>30s</arg>
 </arguments>
-<status status="PASS" starttime="20201225 16:57:04.528" endtime="20201225 16:57:04.542"></status>
+<status status="PASS" starttime="20210111 10:06:21.512" endtime="20210111 10:06:21.525"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -260,10 +256,10 @@
 <arg>${locator}</arg>
 <arg>${txt_value}</arg>
 </arguments>
-<msg timestamp="20201225 16:57:04.543" level="INFO">Typing text '333' into text field '//*[@id="blog_url"]'.</msg>
-<status status="PASS" starttime="20201225 16:57:04.542" endtime="20201225 16:57:04.595"></status>
+<msg timestamp="20210111 10:06:21.525" level="INFO">Typing text '333' into text field '//*[@id="blog_url"]'.</msg>
+<status status="PASS" starttime="20210111 10:06:21.525" endtime="20210111 10:06:21.581"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:57:04.528" endtime="20201225 16:57:04.595"></status>
+<status status="PASS" starttime="20210111 10:06:21.512" endtime="20210111 10:06:21.581"></status>
 </kw>
 <kw name="Wait Type" library="Book_Key">
 <arguments>
@@ -276,7 +272,7 @@
 <arg>${locator}</arg>
 <arg>30s</arg>
 </arguments>
-<status status="PASS" starttime="20201225 16:57:04.595" endtime="20201225 16:57:04.607"></status>
+<status status="PASS" starttime="20210111 10:06:21.582" endtime="20210111 10:06:21.594"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -284,10 +280,10 @@
 <arg>${locator}</arg>
 <arg>${txt_value}</arg>
 </arguments>
-<msg timestamp="20201225 16:57:04.607" level="INFO">Typing text '444444' into text field '//*[@id="youtube_url"]'.</msg>
-<status status="PASS" starttime="20201225 16:57:04.607" endtime="20201225 16:57:04.662"></status>
+<msg timestamp="20210111 10:06:21.594" level="INFO">Typing text '444444' into text field '//*[@id="youtube_url"]'.</msg>
+<status status="PASS" starttime="20210111 10:06:21.594" endtime="20210111 10:06:21.655"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:57:04.595" endtime="20201225 16:57:04.662"></status>
+<status status="PASS" starttime="20210111 10:06:21.581" endtime="20210111 10:06:21.655"></status>
 </kw>
 <kw name="Wait Click" library="Book_Key">
 <arguments>
@@ -299,25 +295,25 @@
 <arg>${locator}</arg>
 <arg>15s</arg>
 </arguments>
-<status status="PASS" starttime="20201225 16:57:04.663" endtime="20201225 16:57:04.676"></status>
+<status status="PASS" starttime="20210111 10:06:21.656" endtime="20210111 10:06:21.670"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20201225 16:57:04.676" level="INFO">Clicking element 'xpath=//select[@name="book_type"]'.</msg>
-<status status="PASS" starttime="20201225 16:57:04.676" endtime="20201225 16:57:04.780"></status>
+<msg timestamp="20210111 10:06:21.670" level="INFO">Clicking element 'xpath=//select[@name="book_type"]'.</msg>
+<status status="PASS" starttime="20210111 10:06:21.670" endtime="20210111 10:06:21.838"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20201225 16:57:05.781" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20201225 16:57:04.780" endtime="20201225 16:57:05.781"></status>
+<msg timestamp="20210111 10:06:22.841" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210111 10:06:21.838" endtime="20210111 10:06:22.841"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:57:04.662" endtime="20201225 16:57:05.782"></status>
+<status status="PASS" starttime="20210111 10:06:21.655" endtime="20210111 10:06:22.842"></status>
 </kw>
 <kw name="Wait Click" library="Book_Key">
 <arguments>
@@ -329,25 +325,25 @@
 <arg>${locator}</arg>
 <arg>15s</arg>
 </arguments>
-<status status="PASS" starttime="20201225 16:57:05.782" endtime="20201225 16:57:05.795"></status>
+<status status="PASS" starttime="20210111 10:06:22.843" endtime="20210111 10:06:22.857"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20201225 16:57:05.796" level="INFO">Clicking element 'xpath=//select/option[5]'.</msg>
-<status status="PASS" starttime="20201225 16:57:05.796" endtime="20201225 16:57:06.105"></status>
+<msg timestamp="20210111 10:06:22.857" level="INFO">Clicking element 'xpath=//select/option[5]'.</msg>
+<status status="PASS" starttime="20210111 10:06:22.857" endtime="20210111 10:06:23.175"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20201225 16:57:07.108" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20201225 16:57:06.105" endtime="20201225 16:57:07.108"></status>
+<msg timestamp="20210111 10:06:24.175" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210111 10:06:23.175" endtime="20210111 10:06:24.176"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:57:05.782" endtime="20201225 16:57:07.108"></status>
+<status status="PASS" starttime="20210111 10:06:22.842" endtime="20210111 10:06:24.176"></status>
 </kw>
 <kw name="Wait Type" library="Book_Key">
 <arguments>
@@ -360,7 +356,7 @@
 <arg>${locator}</arg>
 <arg>30s</arg>
 </arguments>
-<status status="PASS" starttime="20201225 16:57:07.109" endtime="20201225 16:57:07.122"></status>
+<status status="PASS" starttime="20210111 10:06:24.182" endtime="20210111 10:06:24.195"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -368,10 +364,10 @@
 <arg>${locator}</arg>
 <arg>${txt_value}</arg>
 </arguments>
-<msg timestamp="20201225 16:57:07.122" level="INFO">Typing text 'ชื่อหนังสือค่าๆๆ' into text field '//*[@id="book_name"]'.</msg>
-<status status="PASS" starttime="20201225 16:57:07.122" endtime="20201225 16:57:07.428"></status>
+<msg timestamp="20210111 10:06:24.195" level="INFO">Typing text 'ชื่อหนังสือค่าๆๆ' into text field '//*[@id="book_name"]'.</msg>
+<status status="PASS" starttime="20210111 10:06:24.195" endtime="20210111 10:06:24.499"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:57:07.108" endtime="20201225 16:57:07.429"></status>
+<status status="PASS" starttime="20210111 10:06:24.176" endtime="20210111 10:06:24.500"></status>
 </kw>
 <kw name="Wait Type" library="Book_Key">
 <arguments>
@@ -384,7 +380,7 @@
 <arg>${locator}</arg>
 <arg>30s</arg>
 </arguments>
-<status status="PASS" starttime="20201225 16:57:07.429" endtime="20201225 16:57:07.441"></status>
+<status status="PASS" starttime="20210111 10:06:24.500" endtime="20210111 10:06:24.512"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -392,10 +388,10 @@
 <arg>${locator}</arg>
 <arg>${txt_value}</arg>
 </arguments>
-<msg timestamp="20201225 16:57:07.442" level="INFO">Typing text 'ชื่อหนังสือค่าๆๆ//' into text field '//*[@id="blame_position"]'.</msg>
-<status status="PASS" starttime="20201225 16:57:07.441" endtime="20201225 16:57:07.511"></status>
+<msg timestamp="20210111 10:06:24.513" level="INFO">Typing text 'ชื่อหนังสือค่าๆๆ//' into text field '//*[@id="blame_position"]'.</msg>
+<status status="PASS" starttime="20210111 10:06:24.512" endtime="20210111 10:06:24.581"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:57:07.429" endtime="20201225 16:57:07.511"></status>
+<status status="PASS" starttime="20210111 10:06:24.500" endtime="20210111 10:06:24.581"></status>
 </kw>
 <kw name="wait click choose file" library="Book_Key">
 <arguments>
@@ -408,18 +404,18 @@
 <arg>${locator}</arg>
 <arg>${AddFile}</arg>
 </arguments>
-<msg timestamp="20201225 16:57:07.512" level="INFO">Sending /Users/ads/Desktop/Book/BeaPrommajan.jpg to browser.</msg>
-<status status="PASS" starttime="20201225 16:57:07.511" endtime="20201225 16:57:07.541"></status>
+<msg timestamp="20210111 10:06:24.582" level="INFO">Sending /Users/ads/Desktop/Book/BeaPrommajan.jpg to browser.</msg>
+<status status="PASS" starttime="20210111 10:06:24.582" endtime="20210111 10:06:24.614"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20201225 16:57:08.541" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20201225 16:57:07.541" endtime="20201225 16:57:08.541"></status>
+<msg timestamp="20210111 10:06:25.617" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210111 10:06:24.615" endtime="20210111 10:06:25.617"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:57:07.511" endtime="20201225 16:57:08.542"></status>
+<status status="PASS" starttime="20210111 10:06:24.582" endtime="20210111 10:06:25.617"></status>
 </kw>
 <kw name="wait click choose file" library="Book_Key">
 <arguments>
@@ -432,18 +428,18 @@
 <arg>${locator}</arg>
 <arg>${AddFile}</arg>
 </arguments>
-<msg timestamp="20201225 16:57:08.543" level="INFO">Sending /Users/ads/Desktop/Book/BeaPrommajan.jpg to browser.</msg>
-<status status="PASS" starttime="20201225 16:57:08.542" endtime="20201225 16:57:08.569"></status>
+<msg timestamp="20210111 10:06:25.618" level="INFO">Sending /Users/ads/Desktop/Book/BeaPrommajan.jpg to browser.</msg>
+<status status="PASS" starttime="20210111 10:06:25.618" endtime="20210111 10:06:25.646"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20201225 16:57:09.569" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20201225 16:57:08.569" endtime="20201225 16:57:09.569"></status>
+<msg timestamp="20210111 10:06:26.646" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210111 10:06:25.646" endtime="20210111 10:06:26.647"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:57:08.542" endtime="20201225 16:57:09.570"></status>
+<status status="PASS" starttime="20210111 10:06:25.617" endtime="20210111 10:06:26.647"></status>
 </kw>
 <kw name="Wait Type" library="Book_Key">
 <arguments>
@@ -456,7 +452,7 @@
 <arg>${locator}</arg>
 <arg>30s</arg>
 </arguments>
-<status status="PASS" starttime="20201225 16:57:09.570" endtime="20201225 16:57:09.584"></status>
+<status status="PASS" starttime="20210111 10:06:26.647" endtime="20210111 10:06:26.662"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -464,10 +460,10 @@
 <arg>${locator}</arg>
 <arg>${txt_value}</arg>
 </arguments>
-<msg timestamp="20201225 16:57:09.584" level="INFO">Typing text '321' into text field '//*[@id="writer"]'.</msg>
-<status status="PASS" starttime="20201225 16:57:09.584" endtime="20201225 16:57:09.639"></status>
+<msg timestamp="20210111 10:06:26.663" level="INFO">Typing text '321' into text field '//*[@id="writer"]'.</msg>
+<status status="PASS" starttime="20210111 10:06:26.663" endtime="20210111 10:06:26.722"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:57:09.570" endtime="20201225 16:57:09.639"></status>
+<status status="PASS" starttime="20210111 10:06:26.647" endtime="20210111 10:06:26.722"></status>
 </kw>
 <kw name="Wait Type" library="Book_Key">
 <arguments>
@@ -480,7 +476,7 @@
 <arg>${locator}</arg>
 <arg>30s</arg>
 </arguments>
-<status status="PASS" starttime="20201225 16:57:09.639" endtime="20201225 16:57:09.654"></status>
+<status status="PASS" starttime="20210111 10:06:26.723" endtime="20210111 10:06:26.737"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -488,10 +484,10 @@
 <arg>${locator}</arg>
 <arg>${txt_value}</arg>
 </arguments>
-<msg timestamp="20201225 16:57:09.655" level="INFO">Typing text '123' into text field '//*[@id="alias"]'.</msg>
-<status status="PASS" starttime="20201225 16:57:09.655" endtime="20201225 16:57:09.708"></status>
+<msg timestamp="20210111 10:06:26.738" level="INFO">Typing text '123' into text field '//*[@id="alias"]'.</msg>
+<status status="PASS" starttime="20210111 10:06:26.737" endtime="20210111 10:06:26.791"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:57:09.639" endtime="20201225 16:57:09.708"></status>
+<status status="PASS" starttime="20210111 10:06:26.723" endtime="20210111 10:06:26.791"></status>
 </kw>
 <kw name="Wait Type" library="Book_Key">
 <arguments>
@@ -504,7 +500,7 @@
 <arg>${locator}</arg>
 <arg>30s</arg>
 </arguments>
-<status status="PASS" starttime="20201225 16:57:09.709" endtime="20201225 16:57:09.721"></status>
+<status status="PASS" starttime="20210111 10:06:26.791" endtime="20210111 10:06:26.805"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -512,10 +508,10 @@
 <arg>${locator}</arg>
 <arg>${txt_value}</arg>
 </arguments>
-<msg timestamp="20201225 16:57:09.722" level="INFO">Typing text '788' into text field '//*[@id="product_price"]'.</msg>
-<status status="PASS" starttime="20201225 16:57:09.721" endtime="20201225 16:57:09.778"></status>
+<msg timestamp="20210111 10:06:26.805" level="INFO">Typing text '788' into text field '//*[@id="product_price"]'.</msg>
+<status status="PASS" starttime="20210111 10:06:26.805" endtime="20210111 10:06:26.868"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:57:09.708" endtime="20201225 16:57:09.778"></status>
+<status status="PASS" starttime="20210111 10:06:26.791" endtime="20210111 10:06:26.868"></status>
 </kw>
 <kw name="Wait Type" library="Book_Key">
 <arguments>
@@ -528,7 +524,7 @@
 <arg>${locator}</arg>
 <arg>30s</arg>
 </arguments>
-<status status="PASS" starttime="20201225 16:57:09.779" endtime="20201225 16:57:09.790"></status>
+<status status="PASS" starttime="20210111 10:06:26.868" endtime="20210111 10:06:26.882"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -536,10 +532,10 @@
 <arg>${locator}</arg>
 <arg>${txt_value}</arg>
 </arguments>
-<msg timestamp="20201225 16:57:09.791" level="INFO">Typing text '566' into text field '//*[@id="price"]'.</msg>
-<status status="PASS" starttime="20201225 16:57:09.790" endtime="20201225 16:57:09.845"></status>
+<msg timestamp="20210111 10:06:26.883" level="INFO">Typing text '566' into text field '//*[@id="price"]'.</msg>
+<status status="PASS" starttime="20210111 10:06:26.883" endtime="20210111 10:06:26.943"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:57:09.778" endtime="20201225 16:57:09.845"></status>
+<status status="PASS" starttime="20210111 10:06:26.868" endtime="20210111 10:06:26.943"></status>
 </kw>
 <kw name="Wait Type" library="Book_Key">
 <arguments>
@@ -552,7 +548,7 @@
 <arg>${locator}</arg>
 <arg>30s</arg>
 </arguments>
-<status status="PASS" starttime="20201225 16:57:09.846" endtime="20201225 16:57:09.858"></status>
+<status status="PASS" starttime="20210111 10:06:26.944" endtime="20210111 10:06:26.956"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -560,10 +556,10 @@
 <arg>${locator}</arg>
 <arg>${txt_value}</arg>
 </arguments>
-<msg timestamp="20201225 16:57:09.858" level="INFO">Typing text '44' into text field '//*[@id="pages"]'.</msg>
-<status status="PASS" starttime="20201225 16:57:09.858" endtime="20201225 16:57:09.909"></status>
+<msg timestamp="20210111 10:06:26.957" level="INFO">Typing text '44' into text field '//*[@id="pages"]'.</msg>
+<status status="PASS" starttime="20210111 10:06:26.957" endtime="20210111 10:06:27.008"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:57:09.845" endtime="20201225 16:57:09.909"></status>
+<status status="PASS" starttime="20210111 10:06:26.943" endtime="20210111 10:06:27.008"></status>
 </kw>
 <kw name="Wait Type" library="Book_Key">
 <arguments>
@@ -576,7 +572,7 @@
 <arg>${locator}</arg>
 <arg>30s</arg>
 </arguments>
-<status status="PASS" starttime="20201225 16:57:09.909" endtime="20201225 16:57:09.922"></status>
+<status status="PASS" starttime="20210111 10:06:27.008" endtime="20210111 10:06:27.023"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -584,10 +580,10 @@
 <arg>${locator}</arg>
 <arg>${txt_value}</arg>
 </arguments>
-<msg timestamp="20201225 16:57:09.922" level="INFO">Typing text '4' into text field '//*[@id="pim_time"]'.</msg>
-<status status="PASS" starttime="20201225 16:57:09.922" endtime="20201225 16:57:09.974"></status>
+<msg timestamp="20210111 10:06:27.024" level="INFO">Typing text '4' into text field '//*[@id="pim_time"]'.</msg>
+<status status="PASS" starttime="20210111 10:06:27.023" endtime="20210111 10:06:27.075"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:57:09.909" endtime="20201225 16:57:09.974"></status>
+<status status="PASS" starttime="20210111 10:06:27.008" endtime="20210111 10:06:27.075"></status>
 </kw>
 <kw name="Wait Type" library="Book_Key">
 <arguments>
@@ -600,7 +596,7 @@
 <arg>${locator}</arg>
 <arg>30s</arg>
 </arguments>
-<status status="PASS" starttime="20201225 16:57:09.974" endtime="20201225 16:57:09.988"></status>
+<status status="PASS" starttime="20210111 10:06:27.076" endtime="20210111 10:06:27.090"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -608,15 +604,18 @@
 <arg>${locator}</arg>
 <arg>${txt_value}</arg>
 </arguments>
-<msg timestamp="20201225 16:57:09.988" level="INFO">Typing text '2014' into text field '//*[@id="pim_year"]'.</msg>
-<status status="PASS" starttime="20201225 16:57:09.988" endtime="20201225 16:57:10.056"></status>
+<msg timestamp="20210111 10:06:27.090" level="INFO">Typing text '2014' into text field '//*[@id="pim_year"]'.</msg>
+<status status="PASS" starttime="20210111 10:06:27.090" endtime="20210111 10:06:27.149"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:57:09.974" endtime="20201225 16:57:10.056"></status>
+<status status="PASS" starttime="20210111 10:06:27.075" endtime="20210111 10:06:27.149"></status>
 </kw>
-<status status="PASS" starttime="20201225 16:56:59.616" endtime="20201225 16:57:10.056" critical="yes"></status>
+<status status="PASS" starttime="20210111 10:06:16.567" endtime="20210111 10:06:27.149" critical="yes"></status>
 </test>
-<doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
-<status status="PASS" starttime="20201225 16:56:50.371" endtime="20201225 16:57:10.157"></status>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210111 10:06:27.150" endtime="20210111 10:06:27.395"></status>
+</kw>
+<status status="PASS" starttime="20210111 10:06:06.546" endtime="20210111 10:06:27.395"></status>
 </suite>
 <statistics>
 <total>
